@@ -95,6 +95,30 @@ export const blogPosts: BlogPost[] = [
     },
   },
   {
+    slug: 'how-to-train-ai-on-your-consulting-framework',
+    title: 'How to Train AI on Your Consulting Framework',
+    // 153 chars — keyword + documentation framing + who-not-for hook
+    excerpt:
+      'Training AI on your consulting framework starts with documentation, not a new AI subscription. Here\'s the five-step process and who should not start yet.',
+    keywords:
+      'how to train AI on your consulting framework, train AI on consulting methodology, encode consulting framework into AI, productize framework with AI, scale my methodology with AI, AI trained on proprietary knowledge, turn consulting IP into AI, custom AI knowledge base for consultant',
+    category: 'Operations',
+    author: 'Josh Forti',
+    authorRole: 'Founder, Client Intelligence',
+    authorBio:
+      'Josh Forti is the founder of Client Intelligence. He has spent the last decade building and advising service-based businesses, and created the Intelligence as a Service model to give consultants, coaches, and agencies a scalable structure for deploying their expert IP.',
+    publishDate: '2026-05-14',
+    readTime: 11,
+    featured: false,
+    coverImage: {
+      src: '/images/pexels/14314638.webp',
+      alt: 'Digital spheres interconnected by glowing lines — the network of frameworks and client contexts that form a trained AI consulting system',
+      photographer: 'Merlin Lightpainting',
+      photographerUrl: 'https://www.pexels.com/@merlin/',
+      pexelsUrl: 'https://www.pexels.com/photo/14314638/',
+    },
+  },
+  {
     slug: 'best-ai-tools-for-consultants-2025',
     title: 'Best AI Tools for Consultants in 2026',
     // 153 chars — primary keyword + core argument + framework promise
