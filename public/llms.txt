@@ -1,0 +1,15 @@
+# Client Intelligence
+
+> Intelligence as a Service platform for service business owners. Centralizes proprietary frameworks and applies them to every client through isolated per-client AI workspaces. Built for agencies, consultants, coaches, and fractional executives who have a proprietary methodology and want to apply it consistently at scale — without repeating themselves for every client.
+
+## Core Product Pages
+
+- [Home](https://learn.clientintelligence.ai/): Client Intelligence overview — Intelligence as a Service for consultants, agencies, coaches, and fractional executives
+- [Product](https://clientintelligence.ai): Start a free trial — Starter $97/mo, Pro $497/mo
+
+## Key Blog Posts
+
+- [What Is Intelligence as a Service?](https://learn.clientintelligence.ai/blog/intelligence-as-a-service): Category definition — what IaaS means, who it is for, how it works, and how Client Intelligence implements it
+- [How to Scale a Consulting Business Without Hiring](https://learn.clientintelligence.ai/blog/how-to-scale-consulting-without-hiring): Why scaling a service business requires a model change, not efficiency gains — how to systematise delivery without adding headcount
+- [Why Services Beat Courses in the AI Era](https://learn.clientintelligence.ai/blog/why-services-beat-courses-in-the-ai-era): AI delivers information at near-zero cost but cannot apply it in context — why service businesses have a structural advantage over info products in an AI economy
+- [Best AI Tools for Consultants in 2025](https://learn.clientintelligence.ai/blog/best-ai-tools-for-consultants-2025): What makes an AI tool genuinely useful for client-facing consultants — per-client data isolation, methodology loading, and workspace separation explained
