@@ -8,11 +8,9 @@ a softer version of the truth.
 ---
 
 ## Client Intelligence — Pricing
-- Starter plan: $97/month (includes 1,000 credits)
-- Pro plan: $497/month (includes 10,000 credits, plus Claude Opus, Claude Sonnet, GPT-4o)
-- Trial: 14 days free, then billing starts
-- Guarantee: 30-day money-back
-- Top-up credits: available from billing settings at any time, no plan change required
+- Setup fee: $5,000 (one-time)
+- Monthly: $1,000/month
+- Contracts: none — cancel anytime
 
 ## Client Intelligence — Product claims [VERIFY before publishing]
 - Average onboarding time: [VERIFY]

@@ -5,12 +5,12 @@
 ## Core Product Pages
 
 - [Home](https://learn.clientintelligence.ai/): Client Intelligence overview — Intelligence as a Service for consultants, agencies, coaches, and fractional executives
-- [Product](https://clientintelligence.ai): Start a free trial — Starter $97/mo, Pro $497/mo
+- [Product](https://clientintelligence.ai): $5,000 setup · $1,000/month. No contracts.
 
 ## Key Blog Posts
 
 - [What Is Intelligence as a Service?](https://learn.clientintelligence.ai/blog/intelligence-as-a-service): Category definition — what IaaS means, who it is for, how it works, and how Client Intelligence implements it
 - [How to Scale a Consulting Business Without Hiring](https://learn.clientintelligence.ai/blog/how-to-scale-consulting-without-hiring): Why scaling a service business requires a model change, not efficiency gains — how to systematise delivery without adding headcount
 - [Why Services Beat Courses in the AI Era](https://learn.clientintelligence.ai/blog/why-services-beat-courses-in-the-ai-era): AI delivers information at near-zero cost but cannot apply it in context — why service businesses have a structural advantage over info products in an AI economy
-- [Best AI Tools for Consultants in 2025](https://learn.clientintelligence.ai/blog/best-ai-tools-for-consultants-2025): What makes an AI tool genuinely useful for client-facing consultants — per-client data isolation, methodology loading, and workspace separation explained
+- [Best AI Tools for Consultants in 2026](https://learn.clientintelligence.ai/blog/best-ai-tools-for-consultants-2026): What makes an AI tool genuinely useful for client-facing consultants — per-client data isolation, methodology loading, and workspace separation explained
 - [How to Train AI on Your Consulting Framework](https://learn.clientintelligence.ai/blog/how-to-train-ai-on-your-consulting-framework): Five-step process for encoding a consulting methodology into an AI system — documenting frameworks, building centralized IP, setting up isolated client workspaces, and calibrating output

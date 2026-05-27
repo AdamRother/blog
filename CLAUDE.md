@@ -72,7 +72,7 @@
 **\- Open Graph images (1200×630) — \`/public/og/\*.png\`**  
 **\- Image width/height attributes for CLS**  
 **\- Semantic HTML5 (\`\<header\>\`, \`\<nav\>\`, \`\<main\>\`, \`\<article\>\`, \`\<footer\>\`)**  
-**\- Static pre-rendering — \`output: 'export'\`**  
+**\- Static pre-rendering — Vercel handles build output natively**  
 **\- Mobile viewport — set in \`app/layout.tsx\`**
 
 **\---**
@@ -101,7 +101,7 @@
 
 **\- \*\*Language:\*\* TypeScript**  
 **\- \*\*Framework:\*\* Next.js 15 (App Router)**  
-**\- \*\*Rendering:\*\* Static Site Generation via \`output: 'export'\`. \`out/\` is the deployable.**  
+**\- \*\*Rendering:\*\* Static Site Generation via Next.js App Router. Vercel handles build output natively.**  
 **\- \*\*Styling:\*\* Tailwind CSS**  
 **\- \*\*Content:\*\* Flat TypeScript files in \`/content/\*.ts\`. No database.**  
 **\- \*\*Deployment:\*\* Vercel**
@@ -119,7 +119,8 @@
 
 **1\. \`npm install\`**  
 **2\. \`npm run dev\` — opens on \`http://localhost:3000\`**  
-**3\. To ship: \`npm run build\` → the \`out/\` directory is the deployable site**
+**3\. To ship: push to GitHub — Vercel auto-deploys on every commit to \`main\`**  
+**Note: after \`npm run build\`, always run \`rm -rf .next\` before \`npm run dev\` to clear the cache.**
 
 **\---**
 
