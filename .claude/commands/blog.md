@@ -422,8 +422,7 @@ Only two verified stories exist. Do not invent others:
 2. Josh's mission narrative — use as emotional weight behind a freedom/time argument
 
 ### Stats — from `references/stats.md`
-Exact figures only: $97/month Starter (1,000 credits), $497/month Pro (10,000 credits
-+ Claude Opus, Claude Sonnet, GPT-4o). Trial: 14 days. Guarantee: 30-day money-back.
+Exact figures only: $5,000 setup (one-time), $1,000/month, no contracts.
 Do not round. Do not approximate. If a number cannot be verified, cut the claim.
 
 ### Hard stops — delete any sentence matching these before finishing:
@@ -579,7 +578,7 @@ Must see:
 Verify meta description in the static output:
 ```bash
 grep -o 'name="description" content="[^"]*"' \
-  "/Users/adamrother/Claude Code/Blog - Josh Forti/out/blog/SLUG/index.html"
+  "/Users/adamrother/Claude Code/Blog - Josh Forti/.next/server/app/blog/SLUG/page.html"
 ```
 
 Do not report done until both pass. If the build fails, diagnose and fix before responding.
@@ -615,6 +614,6 @@ Post is live at `http://localhost:[PORT]/blog/SLUG`.
 | Story | Only founding insight quote OR mission narrative — no others |
 | Links | 2–3 external verified, diverse source types; 3+ internal |
 | "Not for you" | Always present, second-to-last H2 |
-| Stats | Exact figures only — $97, $497, 14 days, 30 days — never rounded |
+| Stats | Exact figures only — $5,000 setup, $1,000/month, no contracts — never rounded |
 | Images | AI-themed, landscape only; 1 hero + 4–5 inline + 1 card; never repeated across any page on the site |
 | Banned | No em dashes, no exclamation marks, no emoji, no AI-tell phrases, no generic benefit lists |
