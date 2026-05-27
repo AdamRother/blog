@@ -66,8 +66,7 @@ export default function Nav() {
             rel="noopener noreferrer"
             className="inline-flex h-9 items-center gap-1.5 rounded-lg px-5 text-sm font-semibold bg-gold text-ink transition-colors hover:bg-gold-hover whitespace-nowrap"
           >
-            <span className="sm:hidden">Try it</span>
-            <span className="hidden sm:inline">Learn More</span>
+            <span>Learn More</span>
           </a>
         </div>
       </nav>
