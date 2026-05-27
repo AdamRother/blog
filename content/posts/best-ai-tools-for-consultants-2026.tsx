@@ -260,10 +260,9 @@ function PostBody() {
         <footer>Josh Forti, Founder, Client Intelligence</footer>
       </blockquote>
       <p>
-        The Starter plan is $97/month and includes 1,000 credits. The Pro plan is
-        $497/month and includes 10,000 credits, plus access to Claude Opus, Claude Sonnet,
-        and GPT-4o. Both plans include a 14-day free trial and a 30-day money-back
-        guarantee.
+        Client Intelligence is $5,000 setup and $1,000/month, all-in. Every AI model
+        (Claude Opus, Claude Sonnet, GPT-4o), unlimited client workspaces, and every feature
+        included. No usage limits, no tiers, no contracts.
       </p>
       <p>
         The model access matters practically. Client-facing work requires the best model for

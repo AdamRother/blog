@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { blogPosts } from '@/content/blog'
 import { postRegistry } from '@/content/posts'
+import FadeIn from '@/components/FadeIn'
 
 const BASE = 'https://learn.clientintelligence.ai'
 
@@ -172,16 +173,22 @@ export default async function BlogPostPage({
 
         {/* Article header */}
         <header className="max-w-3xl mx-auto px-6 pt-8 pb-10">
-          <p className="text-xs font-semibold text-gold-accessible uppercase tracking-[0.15em] mb-4">
-            {meta.category}
-          </p>
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-ink leading-tight mb-6 text-balance">
-            {meta.title}
-          </h1>
-          <p className="text-muted text-base sm:text-lg leading-relaxed mb-8">{meta.excerpt}</p>
+          <FadeIn>
+            <p className="text-[11px] font-medium uppercase tracking-[0.12em] text-gold mb-4">
+              {meta.category}
+            </p>
+          </FadeIn>
+          <FadeIn delay={80}>
+            <h1 className="font-sans font-semibold text-[32px] sm:text-[40px] md:text-[48px] tracking-[-0.03em] leading-[1.1] text-ink mb-6 text-balance">
+              {meta.title}
+            </h1>
+          </FadeIn>
+          <FadeIn delay={160}>
+            <p className="text-[18px] text-muted leading-[1.7] mb-8">{meta.excerpt}</p>
+          </FadeIn>
           <div className="flex items-center gap-4 pb-8 border-b border-border">
-            <div className="w-10 h-10 rounded-full bg-[#EAE7DF] flex items-center justify-center flex-shrink-0">
-              <span className="font-serif text-sm font-semibold text-ink">
+            <div className="w-10 h-10 rounded-full bg-card-hover flex items-center justify-center flex-shrink-0">
+              <span className="font-sans text-sm font-semibold text-ink">
                 {meta.author.charAt(0)}
               </span>
             </div>
@@ -237,7 +244,7 @@ export default async function BlogPostPage({
           {/* Table of contents */}
           <nav
             aria-label="Table of contents"
-            className="bg-white border border-border rounded-xl p-6 mb-12"
+            className="bg-white border border-border rounded-card p-6 mb-12"
           >
             <p className="text-xs font-semibold text-gold-accessible uppercase tracking-[0.15em] mb-4">
               In this post
@@ -266,7 +273,7 @@ export default async function BlogPostPage({
 
           {/* FAQ */}
           <section id="faq" className="mt-16 pt-12 border-t border-border">
-            <h2 className="font-serif text-2xl text-ink mb-8">Frequently asked questions</h2>
+            <h2 className="font-sans font-semibold text-2xl text-ink mb-8">Frequently asked questions</h2>
             <div className="space-y-8">
               {faq.map((item, i) => (
                 <div key={i}>
@@ -279,8 +286,8 @@ export default async function BlogPostPage({
 
           {/* Author bio */}
           <section aria-label="About the author" className="mt-16 pt-12 border-t border-border flex gap-5 items-start">
-            <div className="w-12 h-12 rounded-full bg-[#EAE7DF] flex items-center justify-center flex-shrink-0">
-              <span className="font-serif text-base font-semibold text-ink">
+            <div className="w-12 h-12 rounded-full bg-card-hover flex items-center justify-center flex-shrink-0">
+              <span className="font-sans text-base font-semibold text-ink">
                 {meta.author.charAt(0)}
               </span>
             </div>
@@ -302,25 +309,28 @@ export default async function BlogPostPage({
           </div>
 
           {/* CTA */}
-          <div className="mt-16 bg-[#1C1700] rounded-2xl p-8 md:p-10 text-center">
-            <div className="w-6 h-px bg-gold mx-auto mb-6" />
-            <p className="font-serif text-2xl text-white mb-3">
-              Ready to put this into practice?
-            </p>
-            <p className="text-white/50 text-sm mb-6 max-w-sm mx-auto">
-              Client Intelligence loads your frameworks once and applies them to every client, in
-              their own isolated workspace.
-            </p>
-            <a
-              href="https://clientintelligence.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gold text-ink text-sm font-medium px-6 py-3 rounded-full hover:bg-gold-dark transition-colors"
-            >
-              Start your 14-day free trial →
-            </a>
-            <p className="text-white/50 text-xs mt-4">$97/month after trial · Cancel anytime</p>
-          </div>
+          <FadeIn>
+            <div className="mt-16 bg-ink rounded-card p-8 md:p-10 text-center">
+              <div className="w-6 h-px bg-gold mx-auto mb-6" />
+              <p className="font-sans font-semibold text-[22px] text-white mb-3">
+                Ready to put this into practice?
+              </p>
+              <p className="text-white/50 text-sm mb-6 max-w-sm mx-auto">
+                Client Intelligence loads your frameworks once and applies them to every client, in
+                their own isolated workspace.
+              </p>
+              <a
+                href="https://clientintelligence.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-12 items-center gap-2 rounded-xl bg-gold text-ink text-[15px] font-semibold px-8 hover:bg-gold-hover transition-colors duration-brand ease-brand"
+              >
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <p className="text-white/50 text-xs mt-4">$5,000 setup · $1,000/month. No contracts.</p>
+            </div>
+          </FadeIn>
         </div>
       </article>
     </>

@@ -21,13 +21,13 @@ export type PostEntry = {
 import { post as intelligenceAsAService } from './intelligence-as-a-service'
 import { post as howToScaleConsultingWithoutHiring } from './how-to-scale-consulting-without-hiring'
 import { post as whyServicesBeatCourses } from './why-services-beat-courses-in-the-ai-era'
-import { post as bestAiToolsForConsultants2025 } from './best-ai-tools-for-consultants-2025'
+import { post as bestAiToolsForConsultants2026 } from './best-ai-tools-for-consultants-2026'
 import { post as howToTrainAiOnYourConsultingFramework } from './how-to-train-ai-on-your-consulting-framework'
 
 export const postRegistry: Record<string, PostEntry> = {
   'intelligence-as-a-service': intelligenceAsAService,
   'how-to-scale-consulting-without-hiring': howToScaleConsultingWithoutHiring,
   'why-services-beat-courses-in-the-ai-era': whyServicesBeatCourses,
-  'best-ai-tools-for-consultants-2025': bestAiToolsForConsultants2025,
+  'best-ai-tools-for-consultants-2026': bestAiToolsForConsultants2026,
   'how-to-train-ai-on-your-consulting-framework': howToTrainAiOnYourConsultingFramework,
 }

@@ -20,8 +20,8 @@ export default function BlogCard({ post, featured = false }: Props) {
   if (featured) {
     return (
       <Link href={`/blog/${post.slug}`} className="group block">
-        <article className="grid md:grid-cols-2 gap-0 bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow duration-300">
-          <div className="bg-[#EAE7DF] aspect-[16/9] md:aspect-auto overflow-hidden">
+        <article className="grid md:grid-cols-2 gap-0 bg-white rounded-card border border-border overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-brand ease-brand">
+          <div className="bg-card-hover aspect-[16/9] md:aspect-auto overflow-hidden">
             <img
               src={coverImage.src}
               alt={coverImage.alt}
@@ -36,7 +36,7 @@ export default function BlogCard({ post, featured = false }: Props) {
             <span className="text-xs font-semibold text-gold-accessible uppercase tracking-[0.15em] mb-3">
               {post.category}
             </span>
-            <h2 className="font-serif text-2xl md:text-3xl text-ink leading-tight mb-4 group-hover:text-gold-accessible transition-colors duration-200">
+            <h2 className="font-sans font-semibold text-2xl md:text-3xl text-ink leading-tight mb-4 group-hover:text-gold-accessible transition-colors duration-brand ease-brand">
               {post.title}
             </h2>
             <p className="text-muted text-sm leading-relaxed mb-6">{post.excerpt}</p>
@@ -55,8 +55,8 @@ export default function BlogCard({ post, featured = false }: Props) {
 
   return (
     <Link href={`/blog/${post.slug}`} className="group block h-full">
-      <article className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
-        <div className="bg-[#EAE7DF] aspect-[16/9] overflow-hidden">
+      <article className="bg-white rounded-card border border-border overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-brand ease-brand h-full flex flex-col">
+        <div className="bg-card-hover aspect-[16/9] overflow-hidden">
           <img
             src={coverImage.src}
             alt={coverImage.alt}
@@ -70,7 +70,7 @@ export default function BlogCard({ post, featured = false }: Props) {
           <span className="text-xs font-semibold text-gold-accessible uppercase tracking-[0.15em] mb-2">
             {post.category}
           </span>
-          <h3 className="font-serif text-lg text-ink leading-snug mb-3 group-hover:text-gold-accessible transition-colors duration-200 flex-1">
+          <h3 className="font-sans font-semibold text-lg text-ink leading-snug mb-3 group-hover:text-gold-accessible transition-colors duration-brand ease-brand flex-1">
             {post.title}
           </h3>
           <p className="text-muted text-sm leading-relaxed mb-4 line-clamp-2">{post.excerpt}</p>

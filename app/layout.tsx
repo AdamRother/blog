@@ -1,18 +1,18 @@
-import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import type { Metadata, Viewport } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
-const inter = Inter({
+const geistSans = Geist({
   subsets: ['latin'],
   variable: '--font-sans',
   display: 'swap',
 })
 
-const playfair = Playfair_Display({
+const geistMono = Geist_Mono({
   subsets: ['latin'],
-  variable: '--font-serif',
+  variable: '--font-mono',
   display: 'swap',
 })
 
@@ -34,6 +34,10 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport: Viewport = {
+  themeColor: '#C9A84C',
+}
+
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -51,16 +55,15 @@ const softwareApplicationSchema = {
   description:
     'Intelligence as a Service platform for service business owners. Centralizes proprietary frameworks and applies them to every client through isolated per-client AI workspaces.',
   offers: [
-    { '@type': 'Offer', name: 'Starter', price: '97', priceCurrency: 'USD', billingIncrement: 'month' },
-    { '@type': 'Offer', name: 'Pro', price: '497', priceCurrency: 'USD', billingIncrement: 'month' },
+    { '@type': 'Offer', name: 'Client Intelligence', price: '1000', priceCurrency: 'USD', billingIncrement: 'month' },
   ],
   operatingSystem: 'Web',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-<body className="font-sans">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className="font-sans">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -71,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-gold focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-medium"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-gold focus:text-ink focus:px-4 focus:py-2 focus:rounded-btn focus:text-sm focus:font-medium focus:ring-2 focus:ring-gold/30"
         >
           Skip to content
         </a>

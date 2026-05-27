@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Brand-matched custom classes (from clientintelligence.ai globals.css) ─── */
+
+/* Dark hero background with subtle gold radial gradient at top */
+.landing-hero-bg {
+  background-color: #1e1d1b;
+  background-image: radial-gradient(800px 400px at 50% 0, rgba(201,168,76,0.08), transparent);
+}
+
+/* Dark CTA section — same as hero but slightly smaller gradient */
+.landing-cta-bg {
+  background-color: #1e1d1b;
+  background-image: radial-gradient(600px 300px at 50% 0, rgba(201,168,76,0.06), transparent);
+}
+
+/* Warm gradient heading used on dark backgrounds */
+.warm-gradient-heading {
+  background: linear-gradient(135deg, #f4f0eb 0%, #c8c0b0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @layer base {
   body {
     @apply bg-cream text-ink antialiased;
@@ -10,11 +32,40 @@
   ::selection {
     @apply bg-gold/20;
   }
+
+  /* Brand focus ring */
+  :focus-visible {
+    outline: 2px solid rgba(201, 168, 76, 0.3);
+    outline-offset: 2px;
+  }
+
+  /* Brand scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Brand transition — 150ms cubic-bezier(0.16, 1, 0.3, 1) */
+  .transition-brand {
+    transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Fade-in-up animation */
+  .animate-fade-in-up {
+    animation: fadeInUp 300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 }
 
@@ -26,7 +77,7 @@
 
 .article-body h2,
 .prose-content h2 {
-  @apply font-serif text-xl text-ink mt-10 mb-4 leading-snug;
+  @apply font-sans font-semibold text-xl text-ink mt-10 mb-4 leading-snug;
 }
 
 @media (min-width: 640px) {
@@ -38,7 +89,7 @@
 
 .article-body h3,
 .prose-content h3 {
-  @apply font-medium text-ink mt-6 mb-2;
+  @apply font-sans font-medium text-ink mt-6 mb-2;
 }
 
 .article-body blockquote,
@@ -48,12 +99,12 @@
 
 .article-body blockquote p,
 .prose-content blockquote p {
-  @apply text-ink font-serif text-lg italic mb-2;
+  @apply text-ink font-sans font-medium text-lg italic mb-2;
 }
 
 .article-body blockquote footer,
 .prose-content blockquote footer {
-  @apply text-xs text-muted;
+  @apply text-xs text-faint;
 }
 
 .article-body ol,
@@ -68,7 +119,7 @@
 
 .article-body a,
 .prose-content a {
-  @apply text-gold underline underline-offset-2 hover:text-gold-dark transition-colors;
+  @apply text-gold-accessible underline underline-offset-2 hover:text-gold transition-colors duration-brand ease-brand;
 }
 
 .article-body strong,
