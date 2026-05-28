@@ -433,8 +433,10 @@ Only three verified stories exist. Do not invent others:
    proof of product conviction or "show don't tell" moment; one use per post maximum
 
 ### Stats — from `references/stats.md`
-Exact figures only: $5,000 setup (one-time), $1,000/month, no contracts.
 Do not round. Do not approximate. If a number cannot be verified, cut the claim.
+Do NOT include pricing figures ($5,000 setup, $1,000/month) anywhere in blog post body
+copy, CTA paragraphs, or FAQ answers. Pricing exists in `references/stats.md` for
+internal reference only — it must not appear in published posts.
 
 ### Hard stops — delete any sentence matching these before finishing:
 - "In today's [X] world..."
@@ -451,6 +453,7 @@ Do not round. Do not approximate. If a number cannot be verified, cut the claim.
 - Bullet list of generic benefits with no specifics
 - Anything that reads like a LinkedIn post
 - Em dashes (— or &mdash;) — replace with a period, comma, or colon
+- Any mention of pricing: "$5,000", "$1,000/month", "setup fee", "per month", "no contracts" — pricing must never appear in blog posts
 
 ---
 
@@ -625,6 +628,6 @@ Post is live at `http://localhost:[PORT]/blog/SLUG`.
 | Story | Only founding insight quote OR mission narrative — no others |
 | Links | 2–3 external verified, diverse source types; 3+ internal |
 | "Not for you" | Always present, second-to-last H2 |
-| Stats | Exact figures only — $5,000 setup, $1,000/month, no contracts — never rounded |
+| Stats | No pricing figures in posts — $5,000/$1,000/month must not appear in body copy, CTAs, or FAQs |
 | Images | AI-themed, landscape only; 1 hero + 4–5 inline + 1 card; never repeated across any page on the site |
 | Banned | No em dashes, no exclamation marks, no emoji, no AI-tell phrases, no generic benefit lists |
