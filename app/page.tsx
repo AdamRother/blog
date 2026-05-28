@@ -26,16 +26,27 @@ export const metadata: Metadata = {
   },
 }
 
+const exploreHubs = [
+  { href: '/for',          label: "Who It's For",    description: 'Built for fractional executives, consultants, coaches, and agency owners managing multiple clients.' },
+  { href: '/vs',           label: 'Why CI',           description: 'See how Client Intelligence compares to ChatGPT, Claude Projects, Notion AI, and more.' },
+  { href: '/use-case',     label: "How It's Used",    description: 'Scale without hiring, train AI on your framework, protect client data, and deliver consistently.' },
+  { href: '/pain',         label: 'Solve a Problem',  description: 'The real frustrations of running a multi-client practice, and exactly how CI fixes them.' },
+  { href: '/feature',      label: 'The Platform',     description: 'Per-client memory, isolated Workspaces, Brain Dump mode, and the Intelligence layer.' },
+  { href: '/industry',     label: 'Your Industry',    description: 'Marketing agencies, consulting firms, coaching businesses, financial advisors, and more.' },
+  { href: '/alternatives', label: 'Switching From',   description: "Moving away from ChatGPT, Notion AI, or stitched-together tools? Here's what's different." },
+  { href: '/category',     label: 'What Is IaaS?',    description: 'Intelligence as a Service: the new model for scaling service businesses with AI.' },
+]
+
 const sorted = [...blogPosts].sort(
   (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
 )
 const featuredPost = sorted[0]
-const recentPosts = sorted.slice(1, 4)
+const recentPosts  = sorted.slice(1, 4)
 
 export default function HomePage() {
   return (
     <>
-      {/* ── Hero — pull up by nav height (-mt-16) so dark bg starts at very top ── */}
+      {/* ── Hero ── */}
       <section className="landing-hero-bg -mt-16 pt-52 sm:pt-60 pb-24 sm:pb-32">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="mx-auto max-w-[800px] text-center">
@@ -73,9 +84,6 @@ export default function HomePage() {
                   Read the Blog
                 </Link>
               </div>
-              <p className="text-xs text-faint">
-                $5,000 setup · $1,000/month. No contracts. Cancel anytime.
-              </p>
             </FadeIn>
           </div>
         </div>
@@ -86,7 +94,7 @@ export default function HomePage() {
         <section className="bg-cream py-24 sm:py-32">
           <div className="max-w-[1200px] mx-auto px-6">
             <FadeIn>
-              <div className="flex items-end justify-between mb-8">
+              <div className="flex items-center justify-between mb-8">
                 <p className="text-[11px] font-medium uppercase tracking-[0.12em] text-gold">
                   From the blog
                 </p>
@@ -107,7 +115,7 @@ export default function HomePage() {
 
       {/* ── Recent posts ── */}
       {recentPosts.length > 0 && (
-        <section className="bg-white py-6 pb-24 sm:pb-32">
+        <section className="bg-white pt-8 pb-24 sm:pb-32">
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="grid md:grid-cols-3 gap-6">
               {recentPosts.map((post, i) => (
@@ -120,7 +128,43 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* ── CTA block — dark background ── */}
+      {/* ── Explore hub grid ── */}
+      <section className="bg-cream py-24 sm:py-32">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <FadeIn>
+            <p className="text-[11px] font-medium uppercase tracking-[0.12em] text-gold mb-4">
+              Explore
+            </p>
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+              <div>
+                <h2 className="font-sans font-semibold text-[28px] sm:text-[34px] text-ink tracking-[-0.02em] leading-[1.1] mb-3">
+                  Find what fits your practice.
+                </h2>
+                <p className="text-muted text-[16px] leading-relaxed max-w-lg">
+                  Comparisons, use cases, personas, and feature deep-dives. Pick the angle that matters to you.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {exploreHubs.map((hub, i) => (
+              <FadeIn key={hub.href} delay={i * 40}>
+                <Link
+                  href={hub.href}
+                  className="group block bg-white rounded-card border border-border p-6 shadow-card hover:shadow-card-hover transition-shadow duration-brand ease-brand h-full"
+                >
+                  <h3 className="text-base font-semibold text-ink group-hover:text-gold-accessible transition-colors duration-brand ease-brand mb-2">
+                    {hub.label}
+                  </h3>
+                  <p className="text-muted text-xs leading-relaxed">{hub.description}</p>
+                </Link>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA block ── */}
       <section className="landing-cta-bg py-24 sm:py-32">
         <div className="max-w-[800px] mx-auto px-6 text-center">
           <FadeIn>
@@ -143,9 +187,6 @@ export default function HomePage() {
               Learn More
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
-            <p className="text-sm text-faint mt-5">
-              $5,000 setup · $1,000/month. No contracts. Cancel anytime.
-            </p>
           </FadeIn>
         </div>
       </section>

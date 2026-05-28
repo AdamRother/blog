@@ -260,11 +260,6 @@ function PostBody() {
         <footer>Josh Forti, Founder, Client Intelligence</footer>
       </blockquote>
       <p>
-        Client Intelligence is $5,000 setup and $1,000/month, all-in. Every AI model
-        (Claude Opus, Claude Sonnet, GPT-4o), unlimited client workspaces, and every feature
-        included. No usage limits, no tiers, no contracts.
-      </p>
-      <p>
         The model access matters practically. Client-facing work requires the best model for
         the task, and that varies by deliverable. A platform that locks you into one model,
         or gives you the cheapest version of a provider&rsquo;s stack, limits the quality ceiling

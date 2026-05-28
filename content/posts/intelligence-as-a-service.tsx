@@ -471,10 +471,7 @@ function PostBody() {
         <a href="/" className="underline underline-offset-2 hover:text-gold transition-colors">
           Client Intelligence
         </a>{' '}
-        is the applied intelligence platform built specifically for this structure. Starter plan
-        is $97 per month and includes 1,000 credits. Pro is $497 per month, includes 10,000
-        credits, and adds access to Claude Opus, Claude Sonnet, and GPT-4o. Both plans include
-        a 14-day free trial and a 30-day money-back guarantee.
+        is the applied intelligence platform built specifically for this structure.
       </p>
       <p>
         For more guides on applied intelligence for service businesses, see the{' '}

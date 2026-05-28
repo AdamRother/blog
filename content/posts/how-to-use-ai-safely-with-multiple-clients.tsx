@@ -361,7 +361,7 @@ function PostBody() {
       <p>
         Client Intelligence is built for this exact structure: one Brain for your methodology,
         isolated workspaces for every client, and perfect memory that persists across every
-        engagement. Setup is $5,000 and $1,000 per month. No contracts.{' '}
+        engagement.{' '}
         <a
           href="/blog"
           className="underline underline-offset-2 hover:text-gold transition-colors"

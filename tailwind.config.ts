@@ -5,12 +5,14 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './seo-pages/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
         // Surfaces & backgrounds
         cream: '#F7F5F2',
+        'card-bg': '#F0EDE8',   // used by PSEO components
         'card-hover': '#F0EDE8',
         sidebar: '#F0EDE8',
         // Gold accent — primary brand color

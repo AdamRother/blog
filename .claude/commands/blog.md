@@ -96,6 +96,9 @@ Find 2–3 external links. They must be:
 - `aiindex.stanford.edu/report/` (used in posts 1 and 4)
 - `sloanreview.mit.edu/article/audit-yourself-to-get-more-from-genai/` (used in post 2)
 - `deloitte.com/us/en/insights/topics/talent/human-capital-trends.html` (used in post 2)
+- `gdpr.eu/what-is-gdpr/` (used in post 6)
+- `en.wikipedia.org/wiki/Information_privacy` (used in post 6)
+- `europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence` (used in post 6)
 
 Use WebFetch on each planned URL and confirm it returns real content.
 Record: URL, source name, the specific claim it supports.
@@ -106,11 +109,16 @@ Record: URL, source name, the specific claim it supports.
 
 **Images already in use across the site — do not reuse any of these:**
 
-`8849295`, `17483874`, `8566526`, `8294619`, `18069697`, `18799044`,
-`8294566`, `16380906`, `34804018`, `17483873`, `16027824`,
-`8386358`, `18548425`, `16461434`, `8439174`, `17483867`,
-`8566464`, `8386440`, `18069490`, `8294654`, `8438945`,
-`4604607`, `4578660`, `17483871`, `16380905`
+`4578660`, `4604607`,
+`8294566`, `8294619`, `8294654`, `8294663`,
+`8386358`, `8386440`,
+`8438945`, `8438951`, `8439174`,
+`8566464`, `8566467`, `8566470`, `8566526`, `8849295`,
+`16027824`, `16380905`, `16380906`, `16461434`,
+`17483867`, `17483870`, `17483871`, `17483873`, `17483874`,
+`17485658`, `17485741`, `17486102`,
+`18069490`, `18069697`, `18069816`, `18548425`, `18799044`,
+`25626516`, `30767251`, `34804018`
 
 **All images on this site are AI-themed.** Every image must connect visually to
 artificial intelligence, machine learning, robotics, or technology. No people at desks,
@@ -308,7 +316,7 @@ function PostBody() {
         Internal <a>: className="underline underline-offset-2 hover:text-gold transition-colors"
         Blockquote (Josh's founding insight): use <blockquote><p>...</p><footer>Josh Forti, Founder, Client Intelligence</footer></blockquote>
         Second-to-last H2: always "Who this is for — and who should not [X]"
-        Last content block: Client Intelligence pricing paragraph + blog link
+        Last content block: Client Intelligence CTA paragraph + blog link (no pricing figures — do not mention setup cost or monthly fee in blog post CTAs)
       */}
 
     </div>
@@ -417,10 +425,12 @@ One of Josh's seven documented opinions per post. Must be backed by:
 - Josh's founding insight from `references/stories.md`
 
 ### Stories — from `references/stories.md`
-Only two verified stories exist. Do not invent others:
+Only three verified stories exist. Do not invent others:
 1. Josh's founding insight quote — use as `<blockquote>` with `<footer>` attribution,
    `&ldquo;` / `&rdquo;` for quote marks, no em dashes in the footer
 2. Josh's mission narrative — use as emotional weight behind a freedom/time argument
+3. The live demo moment — 30-person event, real-time onboarding closed the room; use as
+   proof of product conviction or "show don't tell" moment; one use per post maximum
 
 ### Stats — from `references/stats.md`
 Exact figures only: $5,000 setup (one-time), $1,000/month, no contracts.

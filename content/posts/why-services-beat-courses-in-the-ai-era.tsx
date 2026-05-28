@@ -397,10 +397,7 @@ function PostBody() {
           Client Intelligence
         </a>{' '}
         is the applied intelligence platform built for practitioners who are ready to structure
-        their methodology as a scalable delivery system. Starter plan is $97 per month and
-        includes 1,000 credits. Pro is $497 per month, includes 10,000 credits, and adds access
-        to Claude Opus, Claude Sonnet, and GPT-4o. Both plans include a 14-day free trial and a
-        30-day money-back guarantee.
+        their methodology as a scalable delivery system.
       </p>
       <p>
         For more on how service practices are being built in an AI economy, see the{' '}

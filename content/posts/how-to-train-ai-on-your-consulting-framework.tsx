@@ -441,9 +441,7 @@ function PostBody() {
           Client Intelligence
         </a>{' '}
         is built for this structure: centralized IP, isolated per-client workspaces, and access
-        to Claude Opus, Claude Sonnet, and GPT-4o. Starter plan is $97 per month with
-        1,000 credits. Pro is $497 per month with 10,000 credits. Both plans include a 14-day
-        free trial and a 30-day money-back guarantee.
+        to Claude Opus, Claude Sonnet, and GPT-4o.
       </p>
       <p>
         For more on the model behind this approach, see the{' '}
