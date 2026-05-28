@@ -23,6 +23,7 @@ import { post as howToScaleConsultingWithoutHiring } from './how-to-scale-consul
 import { post as whyServicesBeatCourses } from './why-services-beat-courses-in-the-ai-era'
 import { post as bestAiToolsForConsultants2026 } from './best-ai-tools-for-consultants-2026'
 import { post as howToTrainAiOnYourConsultingFramework } from './how-to-train-ai-on-your-consulting-framework'
+import { post as howToUseAiSafelyWithMultipleClients } from './how-to-use-ai-safely-with-multiple-clients'
 
 export const postRegistry: Record<string, PostEntry> = {
   'intelligence-as-a-service': intelligenceAsAService,
@@ -30,4 +31,5 @@ export const postRegistry: Record<string, PostEntry> = {
   'why-services-beat-courses-in-the-ai-era': whyServicesBeatCourses,
   'best-ai-tools-for-consultants-2026': bestAiToolsForConsultants2026,
   'how-to-train-ai-on-your-consulting-framework': howToTrainAiOnYourConsultingFramework,
+  'how-to-use-ai-safely-with-multiple-clients': howToUseAiSafelyWithMultipleClients,
 }

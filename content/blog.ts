@@ -142,6 +142,30 @@ export const blogPosts: BlogPost[] = [
       pexelsUrl: 'https://www.pexels.com/photo/8566464/',
     },
   },
+  {
+    slug: 'how-to-use-ai-safely-with-multiple-clients',
+    title: 'How to Use AI Safely When Serving Multiple Clients',
+    // 155 chars — keyword + core problem + architecture solution
+    excerpt:
+      'Using AI safely with multiple clients requires structural data isolation, not separate chat threads. Here\'s how to set up isolated workspaces and why prompting doesn\'t work.',
+    keywords:
+      'how to use AI safely when serving multiple clients, client data isolation AI, per-client AI memory, AI that does not mix client data, separate AI workspaces per client, keep client data private in AI, does ChatGPT mix client data, isolated client workspace AI, prevent AI from mixing client information, AI for consultants with multiple clients, AI with client confidentiality built in',
+    category: 'Strategy',
+    author: 'Josh Forti',
+    authorRole: 'Founder, Client Intelligence',
+    authorBio:
+      'Josh Forti is the founder of Client Intelligence. He has spent the last decade building and advising service-based businesses, and created the Intelligence as a Service model to give consultants, coaches, and agencies a scalable structure for deploying their expert IP.',
+    publishDate: '2026-05-28',
+    readTime: 12,
+    featured: false,
+    coverImage: {
+      src: '/images/pexels/8566470.webp',
+      alt: 'White and blue humanoid robot head with a glowing visor representing AI with structured per-client data isolation for service providers',
+      photographer: 'Kindel Media',
+      photographerUrl: 'https://www.pexels.com/@kindelmedia',
+      pexelsUrl: 'https://www.pexels.com/photo/8566470/',
+    },
+  },
 ]
 
 export const blogCategories = ['All', 'Business Model', 'Operations', 'AI & Tools', 'Strategy']
