@@ -9,8 +9,10 @@ a softer version of the truth.
 
 ## Client Intelligence — Pricing
 - Setup fee: $5,000 (one-time)
-- Monthly: $1,000/month
+- Monthly: $1,000/month (full price)
+- Beta pricing: $5,000 setup + $500/month (limited spots, for early users shaping the platform)
 - Contracts: none — cancel anytime
+- Everything included: every feature, every model upgrade, every integration. No usage limits. No surprises.
 
 ## Client Intelligence — Product claims [VERIFY before publishing]
 - Average onboarding time: [VERIFY]

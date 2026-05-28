@@ -51,6 +51,20 @@ The conviction is what gives the problem its gravity.
 
 ---
 
+## Story 3: The live demo moment
+
+At a 30-person live event, Josh showed onboarding in real time. Someone went through it — the quick questions, then the 5-7 minute interview where the platform asked about their story, their methodology, what holds them back. Then the platform synthesized it into a profile. Not surface level. Specifically them. That moment closed the room.
+
+**Source:** Josh's own description of the product demo event, May 2026.
+
+**Use when:** Making the case that the best demo is experienced, not described. Writing about onboarding, first impressions, or why CI converts people who see it live. Arguing that the platform doesn't just process information — it understands the person.
+
+**How to use it:** Use the underlying truth, not the event as biography. "The platform doesn't describe what it knows about you. It shows you." Don't make it a first-person story — make it a concrete scenario the reader can imagine themselves in.
+
+**Format in copy:** Concrete scenario, not testimonial. "Here's what happened in a room of 30 service providers..." works. A bullet list of features does not.
+
+---
+
 ## Placeholder — real client stories to be added
 When Josh has verified client results to document, add them here in this format:
 

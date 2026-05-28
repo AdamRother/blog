@@ -67,7 +67,9 @@ reality, high-agency, conviction, evidence, freedom, cause and effect, clarity
 
 **Avoid:** leverage (as a verb — "leverage your X"), unlock, seamless, world-class,
 game-changer, transform, revolutionize, empower, cutting-edge, synergy, guru, hack,
-disrupt, thought leader, in today's fast-paced world, secret sauce, best practices
+disrupt, thought leader, in today's fast-paced world, secret sauce, best practices,
+AI-powered assistant, just paste your SOP, utilize, supercharge, best-in-class,
+revolutionary, LLM, vector database, RAG, embeddings (no technical jargon in marketing copy)
 
 ---
 
@@ -108,6 +110,51 @@ He NEVER:
 
 He WILL change his mind instantly if presented with truth that proves him wrong.
 The frame is conviction held honestly — not ego.
+
+---
+
+## Product terminology — always use these exact terms
+
+When writing about Client Intelligence, use only these product names. They are precise, not interchangeable.
+
+| Use | Not |
+|-----|-----|
+| **Brain** | "knowledge base", "database", "repository", "memory bank" |
+| **Intelligence** or **Intelligence Mode** | "AI assistant", "chatbot", "AI tool" |
+| **Workspaces** | "Client Workspaces" (the "Client" was dropped May 2026) |
+| **Facts** | "memories" — the user-facing term is always "facts" |
+| **Frameworks** | "templates" or "SOPs" (unless referring to the Templates section) |
+| **Service providers** | "users" in marketing copy |
+
+---
+
+## Writing mechanics
+
+**Reading level:** 3rd-5th grade clarity. Smart concepts explained simply. If a 12-year-old can't follow the sentence structure, rewrite it.
+
+**Paragraph length:** 1-3 sentences maximum for marketing copy. Dense paragraphs kill the voice.
+
+**POV:**
+- Second person "you" when addressing prospects
+- First person plural "we" for company voice
+- Never third person about the reader ("the user can..." becomes "you can...")
+
+**No hedging:** Never "we believe" or "we think" — just state it. Conviction is the voice. Hedging kills it.
+
+---
+
+## Competitor positioning — use these exact framings
+
+**On Claude Projects and Custom GPTs:**
+"They don't know what a client is. They don't isolate data. They don't apply your methodology across contexts. They don't remember decisions three months later. Powerful general tools. CI is built specifically for people who manage clients."
+
+**On generic AI tools:**
+"Another chat window. Another prompt template. Another tool that handles nothing."
+
+**The core truth to build arguments from:**
+"AI tools don't know what a client is. They know what a user is. They know what a chat is. But they don't understand that a business has clients, and each client has their own world."
+
+**The enemy:** Five platforms duct-taped together. Claude in one tab, ChatGPT in another, files in Google Drive, SOPs in Notion, frameworks in your head. Repeating yourself constantly. Copy-pasting context between chats. Losing decisions from two weeks ago because the conversation disappeared.
 
 ---
 
