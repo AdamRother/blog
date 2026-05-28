@@ -10,7 +10,8 @@
 
 **| File | What it is |**  
 **|------|-----------|**  
-**| \`references/voice.md\` | Writing style, sentence rhythm, vocabulary, formatting, anti-patterns |**  
+**| \`references/voice.md\` | Writing style, sentence rhythm, vocabulary, terminology, competitor positioning, anti-patterns |**  
+**| \`references/product.md\` | What CI is, three-layer architecture, five differentiators, ICP, features, onboarding |**  
 **| \`references/humour.md\` | How the brand handles humour |**  
 **| \`references/stats.md\` | Canonical real numbers — pricing, response times, jobs, reviews |**  
 **| \`references/stories.md\` | Recurring anecdotes the brand uses |**  
