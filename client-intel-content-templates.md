@@ -56,7 +56,7 @@ Whenever a template below refers to:
    - 4–7 benefit bullets with short explanations.
    - Tie each benefit to a specific outcome (time saved, clients served, revenue potential).
 7. **H2 — How Client Intelligence implements [PK]**
-   - Explain architecture in plain terms (Account Brain, Client Workspaces, Execution Layer).
+   - Explain architecture in plain terms (Brain, Workspaces, Intelligence Mode) — use these exact terms, see references/product.md.
    - Map each component of [PK] to a real feature.
 8. **H2 — Examples and scenarios**
    - 3–5 short scenario stories for different personas (agency, consultant, coach, fractional CRO).

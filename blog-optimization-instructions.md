@@ -135,7 +135,7 @@
 
 ### 2.13 Call to Action (CTA)
 - Every post needs a CTA — minimum one, ideally two (one mid-post, one at the end)
-- CTA links to the main product page or a sign-up/waitlist page
+- CTA links to https://clientintelligence.ai (the main product page)
 - CTA text must be benefit-led: "See how Client Intelligence applies your frameworks to every client" — not "Sign up now"
 - Make the CTA a button or visually distinct block — not just a hyperlink in text
 

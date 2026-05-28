@@ -23,7 +23,7 @@ Run through this before marking any content task done.
 - [ ] 3–5 internal links to related posts/services
 - [ ] 2–3 external links to authoritative sources (.gov, .edu, major publications)
 - [ ] Word count within 20% of SERP top-3 for the target keyword
-- [ ] Reading level: Grade 8–10 (Hemingway App)
+- [ ] Reading level: 3rd–5th grade clarity (brand standard — clear enough for a 12-year-old to follow the sentence structure)
 
 ## Index pages (blog, services)
 - [ ] H1 describes the page type and audience
