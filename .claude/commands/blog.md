@@ -18,22 +18,22 @@ Read ALL of these files before proceeding. Non-negotiable.
 4. `references/stats.md` — exact numbers only; mark unverifiable claims [VERIFY]
 5. `references/stories.md` — three verified stories only; do not invent
 6. `references/opinions.md` — seven documented opinions; one per post, backed by evidence
-7. `on-page-seo.md` — every checklist item must be satisfied
-8. `blog-optimization-instructions.md` — 10-layer SEO+GEO system; full pre-publish checklist
-9. `client-intel-content-templates.md` — 6 post templates + generation workflow
+7. `references/on-page-seo.md` — every checklist item must be satisfied
+8. `references/blog-optimization-instructions.md` — 10-layer SEO+GEO system; full pre-publish checklist
+9. `references/client-intel-content-templates.md` — 6 post templates + generation workflow
 10. `content/posts/intelligence-as-a-service.tsx` — canonical file structure; match exactly
 11. `content/blog.ts` — understand existing entries before adding a new one
-12. `client-intelligence-keywords-only.md` — keyword source
+12. `references/client-intelligence-keywords-only.md` — keyword source
 
 ---
 
 ## STEP 1 — Select keyword and pick template
 
 **If `$ARGUMENTS` provided:** Use it as the primary keyword.
-**If no argument:** Read `client-intelligence-keywords-only.md`. Identify which bucket
+**If no argument:** Read `references/client-intelligence-keywords-only.md`. Identify which bucket
 (1–7) is least represented in `content/blog.ts`. Choose a primary keyword from that bucket.
 
-**Pick a content template from `client-intel-content-templates.md`:**
+**Pick a content template from `references/client-intel-content-templates.md`:**
 - Broad definition / pillar post → Template 1
 - Step-by-step how-to → Template 2 (must supply `howToSteps` in PostEntry)
 - Comparison / "vs" / alternatives → Template 3

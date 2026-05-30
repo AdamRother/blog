@@ -36,8 +36,8 @@
 
 **| File | What it is |**  
 **|------|-----------|**  
-**| \`blog-optimization-instructions.md\` | 10-layer SEO+GEO system — what every page must include (keyword strategy, schema, GEO/AI citation, full pre-publish checklist) |**  
-**| \`client-intel-content-templates.md\` | 6 post templates + generation workflow — which template to use, how to structure each type, output format |**
+**| \`references/blog-optimization-instructions.md\` | 10-layer SEO+GEO system — what every page must include (keyword strategy, schema, GEO/AI citation, full pre-publish checklist) |**  
+**| \`references/client-intel-content-templates.md\` | 6 post templates + generation workflow — which template to use, how to structure each type, output format |**
 
 **Template selection:**  
 **\- Broad definition / pillar post → Template 1**  
@@ -51,7 +51,7 @@
 
 **\# On-page SEO**
 
-**When generating or editing a blog post, read \`on-page-seo.md\` at the root for the quick checklist. The full publishing checklist is in \`blog-optimization-instructions.md\` Layer 10. Every item applicable to the page type must be satisfied.**
+**When generating or editing a blog post, read \`references/on-page-seo.md\` for the quick checklist. The full publishing checklist is in \`references/blog-optimization-instructions.md\` Layer 10. Every item applicable to the page type must be satisfied.**
 
 **Required for every long-form post:**  
 **\- FAQ section with FAQPage schema (JSON-LD)**  
