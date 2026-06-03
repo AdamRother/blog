@@ -166,6 +166,30 @@ export const blogPosts: BlogPost[] = [
       pexelsUrl: 'https://www.pexels.com/photo/8566470/',
     },
   },
+  {
+    slug: 'ai-for-sales-consultants',
+    title: 'AI for Sales Consultants: What Actually Works',
+    // 156 chars — primary keyword + core argument + revenue framing
+    excerpt:
+      'AI for sales consultants works best when it runs your methodology across every client, not when it drafts one more email. Here is what actually moves revenue.',
+    keywords:
+      'AI for sales consultants, AI tools for sales consultants 2026, AI for sales training consultants, AI to scale sales methodology, AI for revenue strategists, AI for fractional CRO, best AI for revenue-focused consultants, AI that applies your sales methodology to every client, AI for high-ticket sales consulting',
+    category: 'AI & Tools',
+    author: 'Josh Forti',
+    authorRole: 'Founder, Client Intelligence',
+    authorBio:
+      'Josh Forti is the founder of Client Intelligence. He has spent the last decade building and advising service-based businesses, and created the Intelligence as a Service model to give consultants, coaches, and agencies a scalable structure for deploying their expert IP.',
+    publishDate: '2026-06-03',
+    readTime: 11,
+    featured: false,
+    coverImage: {
+      src: '/images/pexels/17483868.webp',
+      alt: 'Vibrant abstract 3D render of a digital brain, representing AI for sales consultants that holds one methodology and applies it to every client',
+      photographer: 'Google DeepMind',
+      photographerUrl: 'https://www.pexels.com/@googledeepmind',
+      pexelsUrl: 'https://www.pexels.com/photo/17483868/',
+    },
+  },
 ]
 
 export const blogCategories = ['All', 'Business Model', 'Operations', 'AI & Tools', 'Strategy']

@@ -24,6 +24,7 @@ import { post as whyServicesBeatCourses } from './why-services-beat-courses-in-t
 import { post as bestAiToolsForConsultants2026 } from './best-ai-tools-for-consultants-2026'
 import { post as howToTrainAiOnYourConsultingFramework } from './how-to-train-ai-on-your-consulting-framework'
 import { post as howToUseAiSafelyWithMultipleClients } from './how-to-use-ai-safely-with-multiple-clients'
+import { post as aiForSalesConsultants } from './ai-for-sales-consultants'
 
 export const postRegistry: Record<string, PostEntry> = {
   'intelligence-as-a-service': intelligenceAsAService,
@@ -32,4 +33,5 @@ export const postRegistry: Record<string, PostEntry> = {
   'best-ai-tools-for-consultants-2026': bestAiToolsForConsultants2026,
   'how-to-train-ai-on-your-consulting-framework': howToTrainAiOnYourConsultingFramework,
   'how-to-use-ai-safely-with-multiple-clients': howToUseAiSafelyWithMultipleClients,
+  'ai-for-sales-consultants': aiForSalesConsultants,
 }
