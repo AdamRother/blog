@@ -190,6 +190,30 @@ export const blogPosts: BlogPost[] = [
       pexelsUrl: 'https://www.pexels.com/photo/17483868/',
     },
   },
+  {
+    slug: 'per-client-ai-memory',
+    title: 'What Is Per-Client AI Memory?',
+    // 152 chars — keyword + isolation benefit + who-it-is-for hook
+    excerpt:
+      'Per-client AI memory keeps each client in an isolated AI workspace, so their context never bleeds into another\'s. Here is how it works and who needs it.',
+    keywords:
+      'per-client AI memory, what is per-client AI memory, how per-client AI memory works, per-client AI context, AI that remembers each client separately, AI with separate memory per client, isolated client workspace AI, client memory AI workspace, protected AI memory per client',
+    category: 'Strategy',
+    author: 'Josh Forti',
+    authorRole: 'Founder, Client Intelligence',
+    authorBio:
+      'Josh Forti is the founder of Client Intelligence. He has spent the last decade building and advising service-based businesses, and created the Intelligence as a Service model to give consultants, coaches, and agencies a scalable structure for deploying their expert IP.',
+    publishDate: '2026-06-03',
+    readTime: 10,
+    featured: false,
+    coverImage: {
+      src: '/images/pexels/25630344.webp',
+      alt: 'Abstract grid of separate glowing cells, each holding a distinct symbol, representing per-client AI memory that keeps every client\'s data in its own isolated workspace',
+      photographer: 'Google DeepMind',
+      photographerUrl: 'https://www.pexels.com/@googledeepmind',
+      pexelsUrl: 'https://www.pexels.com/photo/25630344/',
+    },
+  },
 ]
 
 export const blogCategories = ['All', 'Business Model', 'Operations', 'AI & Tools', 'Strategy']
