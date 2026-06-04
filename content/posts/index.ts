@@ -26,6 +26,7 @@ import { post as howToTrainAiOnYourConsultingFramework } from './how-to-train-ai
 import { post as howToUseAiSafelyWithMultipleClients } from './how-to-use-ai-safely-with-multiple-clients'
 import { post as aiForSalesConsultants } from './ai-for-sales-consultants'
 import { post as perClientAiMemory } from './per-client-ai-memory'
+import { post as chatgptProjectsVsClaudeProjectsForConsultants } from './chatgpt-projects-vs-claude-projects-for-consultants'
 
 export const postRegistry: Record<string, PostEntry> = {
   'intelligence-as-a-service': intelligenceAsAService,
@@ -36,4 +37,5 @@ export const postRegistry: Record<string, PostEntry> = {
   'how-to-use-ai-safely-with-multiple-clients': howToUseAiSafelyWithMultipleClients,
   'ai-for-sales-consultants': aiForSalesConsultants,
   'per-client-ai-memory': perClientAiMemory,
+  'chatgpt-projects-vs-claude-projects-for-consultants': chatgptProjectsVsClaudeProjectsForConsultants,
 }

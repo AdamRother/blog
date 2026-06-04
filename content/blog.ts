@@ -214,6 +214,30 @@ export const blogPosts: BlogPost[] = [
       pexelsUrl: 'https://www.pexels.com/photo/25630344/',
     },
   },
+  {
+    slug: 'chatgpt-projects-vs-claude-projects-for-consultants',
+    title: 'ChatGPT Projects vs Claude Projects for Consultants',
+    // 159 chars — keyword + core contrast + practical promise
+    excerpt:
+      'ChatGPT Projects vs Claude Projects for consultants: both organize chats, neither isolates client data by design. See how they compare and what to use instead.',
+    keywords:
+      'ChatGPT Projects vs Claude Projects for consultants, ChatGPT Projects for client work, Claude Projects for consultants, ChatGPT Projects limitations for agencies, AI projects for managing multiple clients, per-client AI workspace, client data isolation AI, alternatives to ChatGPT Projects for agencies, isolated client workspace AI',
+    category: 'AI & Tools',
+    author: 'Josh Forti',
+    authorRole: 'Founder, Client Intelligence',
+    authorBio:
+      'Josh Forti is the founder of Client Intelligence. He has spent the last decade building and advising service-based businesses, and created the Intelligence as a Service model to give consultants, coaches, and agencies a scalable structure for deploying their expert IP.',
+    publishDate: '2026-06-04',
+    readTime: 10,
+    featured: false,
+    coverImage: {
+      src: '/images/pexels/8566571.webp',
+      alt: 'Autonomous delivery robot moving along a path, representing AI built to run independently across clients, the question behind ChatGPT Projects vs Claude Projects',
+      photographer: 'Kindel Media',
+      photographerUrl: 'https://www.pexels.com/@kindelmedia',
+      pexelsUrl: 'https://www.pexels.com/photo/8566571/',
+    },
+  },
 ]
 
 export const blogCategories = ['All', 'Business Model', 'Operations', 'AI & Tools', 'Strategy']
