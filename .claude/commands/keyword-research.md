@@ -53,17 +53,17 @@ UNUSED=$((KEYWORDS - POSTS))
 echo "Keywords in pool: $KEYWORDS | Published posts: $POSTS | Estimated unused: $UNUSED"
 ```
 
-**If UNUSED > 200:** Output the following message exactly and STOP — do not run Step 2 or beyond, do not modify any files:
+**If UNUSED > 10:** Output the following message exactly and STOP — do not run Step 2 or beyond, do not modify any files:
 
 ```
 POOL SUFFICIENT — no research needed.
 Keywords in pool: [KEYWORDS]
 Published posts: [POSTS]
 Estimated unused: [UNUSED]
-Research will run automatically when unused keywords drop to 200 or below.
+Research will run automatically when unused keywords drop to 10 or below.
 ```
 
-**If UNUSED ≤ 200:** Continue to Step 2. The pool needs replenishment.
+**If UNUSED ≤ 10:** Continue to Step 2. The pool needs replenishment.
 
 ---
 
