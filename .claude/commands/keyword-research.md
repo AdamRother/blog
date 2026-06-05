@@ -40,6 +40,33 @@ Before researching, understand what already exists.
 
 ---
 
+## STEP 1.5 — Check if research is actually needed
+
+Before doing any web research, run this check in Bash:
+
+```bash
+# Count keyword entries in the main 7 buckets (stop before AI Indexing Queries section)
+KEYWORDS=$(awk '/^## AI Indexing Queries/{exit} /^- /{count++} END{print count}' references/client-intelligence-keywords-only.md)
+# Count published posts
+POSTS=$(grep -c '"slug":' content/blog.ts || echo 0)
+UNUSED=$((KEYWORDS - POSTS))
+echo "Keywords in pool: $KEYWORDS | Published posts: $POSTS | Estimated unused: $UNUSED"
+```
+
+**If UNUSED > 100:** Output the following message exactly and STOP — do not run Step 2 or beyond, do not modify any files:
+
+```
+POOL SUFFICIENT — no research needed.
+Keywords in pool: [KEYWORDS]
+Published posts: [POSTS]
+Estimated unused: [UNUSED]
+Research will run automatically when unused keywords drop to 100 or below.
+```
+
+**If UNUSED ≤ 100:** Continue to Step 2. The pool needs replenishment.
+
+---
+
 ## STEP 2 — Web research (minimum 6 searches, 3 page fetches)
 
 Run at least 6 WebSearch queries. After each search, fetch the 1–2 most relevant result URLs with WebFetch to understand content depth and angles. Minimum 3 WebFetch calls total.
