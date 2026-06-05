@@ -167,48 +167,145 @@ function PostBody() {
         Here is how the two stack up on the criteria that actually matter for client work. The third
         column is what a purpose-built per-client workspace does, for reference.
       </p>
-      <table>
-        <thead>
-          <tr>
-            <th>Criterion</th>
-            <th>ChatGPT Projects</th>
-            <th>Claude Projects</th>
-            <th>Per-client workspace</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Client data isolation</td>
-            <td>By folder, one shared account</td>
-            <td>By folder, one shared account</td>
-            <td>Structural, sealed per client</td>
-          </tr>
-          <tr>
-            <td>Methodology applied automatically</td>
-            <td>No, per-project instructions only</td>
-            <td>No, per-project instructions only</td>
-            <td>Yes, loaded once, applied everywhere</td>
-          </tr>
-          <tr>
-            <td>Memory of past decisions</td>
-            <td>Within a chat, not across time</td>
-            <td>Within a chat, not across time</td>
-            <td>Durable, scoped to the client</td>
-          </tr>
-          <tr>
-            <td>Knows which client you mean</td>
-            <td>No</td>
-            <td>No</td>
-            <td>Yes, scoped before it answers</td>
-          </tr>
-          <tr>
-            <td>Best fit</td>
-            <td>Solo, non-sensitive work</td>
-            <td>Solo, long-form non-sensitive work</td>
-            <td>Multi-client professional delivery</td>
-          </tr>
-        </tbody>
-      </table>
+      {/* Desktop comparison table */}
+      <div className="hidden sm:block my-10 overflow-hidden rounded-xl border border-border">
+        <div className="grid grid-cols-4">
+          <div className="px-5 py-3 bg-card-hover border-b border-border">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-faint">Criterion</p>
+          </div>
+          <div className="px-5 py-3 bg-card-hover border-b border-l border-border">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-faint">ChatGPT Projects</p>
+          </div>
+          <div className="px-5 py-3 bg-card-hover border-b border-l border-border">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-faint">Claude Projects</p>
+          </div>
+          <div className="px-5 py-3 bg-ink border-b border-l border-ink">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-gold">Per-client workspace</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 border-b border-border">
+          <div className="px-5 py-4"><p className="text-sm font-medium text-ink leading-snug">Client data isolation</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">By folder, one shared account</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">By folder, one shared account</p></div>
+          <div className="px-5 py-4 border-l border-border bg-gold-light"><p className="text-sm font-medium text-ink leading-snug">Structural, sealed per client</p></div>
+        </div>
+        <div className="grid grid-cols-4 border-b border-border">
+          <div className="px-5 py-4"><p className="text-sm font-medium text-ink leading-snug">Methodology applied automatically</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">No, per-project instructions only</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">No, per-project instructions only</p></div>
+          <div className="px-5 py-4 border-l border-border bg-gold-light"><p className="text-sm font-medium text-ink leading-snug">Yes, loaded once, applied everywhere</p></div>
+        </div>
+        <div className="grid grid-cols-4 border-b border-border">
+          <div className="px-5 py-4"><p className="text-sm font-medium text-ink leading-snug">Memory of past decisions</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">Within a chat, not across time</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">Within a chat, not across time</p></div>
+          <div className="px-5 py-4 border-l border-border bg-gold-light"><p className="text-sm font-medium text-ink leading-snug">Durable, scoped to the client</p></div>
+        </div>
+        <div className="grid grid-cols-4 border-b border-border">
+          <div className="px-5 py-4"><p className="text-sm font-medium text-ink leading-snug">Knows which client you mean</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">No</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">No</p></div>
+          <div className="px-5 py-4 border-l border-border bg-gold-light"><p className="text-sm font-medium text-ink leading-snug">Yes, scoped before it answers</p></div>
+        </div>
+        <div className="grid grid-cols-4">
+          <div className="px-5 py-4"><p className="text-sm font-medium text-ink leading-snug">Best fit</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">Solo, non-sensitive work</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">Solo, long-form non-sensitive work</p></div>
+          <div className="px-5 py-4 border-l border-border bg-gold-light"><p className="text-sm font-medium text-ink leading-snug">Multi-client professional delivery</p></div>
+        </div>
+      </div>
+
+      {/* Mobile comparison cards */}
+      <div className="sm:hidden my-10 -mx-4 overflow-hidden border-y border-border">
+        <div className="px-4 py-3 bg-card-hover border-b border-border">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-faint">Tool comparison</p>
+        </div>
+        <div className="px-4 py-4 border-b border-border bg-white">
+          <p className="text-sm font-semibold text-ink mb-3">Client data isolation</p>
+          <div className="space-y-2">
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">ChatGPT</span>
+              <span className="text-xs text-muted text-right">By folder, one shared account</span>
+            </div>
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">Claude</span>
+              <span className="text-xs text-muted text-right">By folder, one shared account</span>
+            </div>
+            <div className="flex justify-between gap-4 pt-2 border-t border-border">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-semibold text-gold-accessible w-20 flex-shrink-0">Per-client</span>
+              <span className="text-xs text-ink font-medium text-right">Structural, sealed per client</span>
+            </div>
+          </div>
+        </div>
+        <div className="px-4 py-4 border-b border-border bg-white">
+          <p className="text-sm font-semibold text-ink mb-3">Methodology applied automatically</p>
+          <div className="space-y-2">
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">ChatGPT</span>
+              <span className="text-xs text-muted text-right">No, per-project instructions only</span>
+            </div>
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">Claude</span>
+              <span className="text-xs text-muted text-right">No, per-project instructions only</span>
+            </div>
+            <div className="flex justify-between gap-4 pt-2 border-t border-border">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-semibold text-gold-accessible w-20 flex-shrink-0">Per-client</span>
+              <span className="text-xs text-ink font-medium text-right">Yes, loaded once, applied everywhere</span>
+            </div>
+          </div>
+        </div>
+        <div className="px-4 py-4 border-b border-border bg-white">
+          <p className="text-sm font-semibold text-ink mb-3">Memory of past decisions</p>
+          <div className="space-y-2">
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">ChatGPT</span>
+              <span className="text-xs text-muted text-right">Within a chat, not across time</span>
+            </div>
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">Claude</span>
+              <span className="text-xs text-muted text-right">Within a chat, not across time</span>
+            </div>
+            <div className="flex justify-between gap-4 pt-2 border-t border-border">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-semibold text-gold-accessible w-20 flex-shrink-0">Per-client</span>
+              <span className="text-xs text-ink font-medium text-right">Durable, scoped to the client</span>
+            </div>
+          </div>
+        </div>
+        <div className="px-4 py-4 border-b border-border bg-white">
+          <p className="text-sm font-semibold text-ink mb-3">Knows which client you mean</p>
+          <div className="space-y-2">
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">ChatGPT</span>
+              <span className="text-xs text-muted text-right">No</span>
+            </div>
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">Claude</span>
+              <span className="text-xs text-muted text-right">No</span>
+            </div>
+            <div className="flex justify-between gap-4 pt-2 border-t border-border">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-semibold text-gold-accessible w-20 flex-shrink-0">Per-client</span>
+              <span className="text-xs text-ink font-medium text-right">Yes, scoped before it answers</span>
+            </div>
+          </div>
+        </div>
+        <div className="px-4 py-4 bg-white">
+          <p className="text-sm font-semibold text-ink mb-3">Best fit</p>
+          <div className="space-y-2">
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">ChatGPT</span>
+              <span className="text-xs text-muted text-right">Solo, non-sensitive work</span>
+            </div>
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">Claude</span>
+              <span className="text-xs text-muted text-right">Solo, long-form non-sensitive work</span>
+            </div>
+            <div className="flex justify-between gap-4 pt-2 border-t border-border">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-semibold text-gold-accessible w-20 flex-shrink-0">Per-client</span>
+              <span className="text-xs text-ink font-medium text-right">Multi-client professional delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <p>
         The pattern is clear. On the consumer-tool criteria, ChatGPT Projects and Claude Projects
         trade small wins. On the criteria that decide client work, they land in the same place,

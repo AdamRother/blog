@@ -317,7 +317,89 @@ function PostBody() {
         Blockquote (Josh's founding insight): use <blockquote><p>...</p><footer>Josh Forti, Founder, Client Intelligence</footer></blockquote>
         Second-to-last H2: always "Who this is for — and who should not [X]"
         Last content block: Client Intelligence CTA paragraph + blog link (no pricing figures — do not mention setup cost or monthly fee in blog post CTAs)
+
+        COMPARISON TABLES — never use a plain <table>. Use the styled component below.
+        Template 3 posts (comparisons / "vs") always need one. Other post types may include
+        one if a direct feature-by-feature comparison adds clarity.
+
+        Desktop: 4-column (or 3-column) grid with column headers + data rows.
+        Mobile: stacked cards, one per criterion, showing each tool's value + the winning row
+        highlighted with gold-accessible label.
+
+        Pattern for a 4-column comparison (adjust col count as needed):
       */}
+
+      {/* Desktop comparison table — hidden on mobile */}
+      <div className="hidden sm:block my-10 overflow-hidden rounded-xl border border-border">
+        <div className="grid grid-cols-4">
+          <div className="px-5 py-3 bg-card-hover border-b border-border">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-faint">Criterion</p>
+          </div>
+          <div className="px-5 py-3 bg-card-hover border-b border-l border-border">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-faint">[Tool A]</p>
+          </div>
+          <div className="px-5 py-3 bg-card-hover border-b border-l border-border">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-faint">[Tool B]</p>
+          </div>
+          <div className="px-5 py-3 bg-ink border-b border-l border-ink">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-gold">[Winning option]</p>
+          </div>
+        </div>
+        {/* One div per row: border-b border-border on all except last */}
+        <div className="grid grid-cols-4 border-b border-border">
+          <div className="px-5 py-4"><p className="text-sm font-medium text-ink leading-snug">[Criterion]</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">[Value]</p></div>
+          <div className="px-5 py-4 border-l border-border"><p className="text-sm text-muted leading-snug">[Value]</p></div>
+          <div className="px-5 py-4 border-l border-border bg-gold-light"><p className="text-sm font-medium text-ink leading-snug">[Value]</p></div>
+        </div>
+      </div>
+
+      {/* Mobile comparison cards — visible only below sm */}
+      <div className="sm:hidden my-10 -mx-4 overflow-hidden border-y border-border">
+        <div className="px-4 py-3 bg-card-hover border-b border-border">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-faint">Tool comparison</p>
+        </div>
+        {/* One div per criterion row */}
+        <div className="px-4 py-4 border-b border-border bg-white">
+          <p className="text-sm font-semibold text-ink mb-3">[Criterion]</p>
+          <div className="space-y-2">
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">[Tool A]</span>
+              <span className="text-xs text-muted text-right">[Value]</span>
+            </div>
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">[Tool B]</span>
+              <span className="text-xs text-muted text-right">[Value]</span>
+            </div>
+            <div className="flex justify-between gap-4 pt-2 border-t border-border">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-semibold text-gold-accessible w-20 flex-shrink-0">[Winner]</span>
+              <span className="text-xs text-ink font-medium text-right">[Value]</span>
+            </div>
+          </div>
+        </div>
+        {/* Last row: no border-b */}
+        <div className="px-4 py-4 bg-white">
+          <p className="text-sm font-semibold text-ink mb-3">[Criterion]</p>
+          <div className="space-y-2">
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">[Tool A]</span>
+              <span className="text-xs text-muted text-right">[Value]</span>
+            </div>
+            <div className="flex justify-between gap-4">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-medium text-faint w-20 flex-shrink-0">[Tool B]</span>
+              <span className="text-xs text-muted text-right">[Value]</span>
+            </div>
+            <div className="flex justify-between gap-4 pt-2 border-t border-border">
+              <span className="text-[10px] uppercase tracking-[0.1em] font-semibold text-gold-accessible w-20 flex-shrink-0">[Winner]</span>
+              <span className="text-xs text-ink font-medium text-right">[Value]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* END table template — remove the template blocks above, keep only real data */}
+
+      {/*
 
     </div>
   )
