@@ -2,7 +2,7 @@ name: Weekly Keyword Research
 
 on:
   schedule:
-    - cron: '0 6 1,15 * *'  # 1st and 15th of each month at 8am Prague (CEST = UTC+2)
+    - cron: '0 6 1 * *'  # 1st of each month at 8am Prague (CEST = UTC+2)
   workflow_dispatch:      # allows manual trigger from GitHub Actions tab
 
 permissions:
