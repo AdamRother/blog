@@ -53,37 +53,60 @@ UNUSED=$((KEYWORDS - POSTS))
 echo "Keywords in pool: $KEYWORDS | Published posts: $POSTS | Estimated unused: $UNUSED"
 ```
 
-**If UNUSED > 100:** Output the following message exactly and STOP — do not run Step 2 or beyond, do not modify any files:
+**If UNUSED > 200:** Output the following message exactly and STOP — do not run Step 2 or beyond, do not modify any files:
 
 ```
 POOL SUFFICIENT — no research needed.
 Keywords in pool: [KEYWORDS]
 Published posts: [POSTS]
 Estimated unused: [UNUSED]
-Research will run automatically when unused keywords drop to 100 or below.
+Research will run automatically when unused keywords drop to 200 or below.
 ```
 
-**If UNUSED ≤ 100:** Continue to Step 2. The pool needs replenishment.
+**If UNUSED ≤ 200:** Continue to Step 2. The pool needs replenishment.
 
 ---
 
-## STEP 2 — Web research (minimum 6 searches, 3 page fetches)
+## STEP 2 — Web research (minimum 20 searches, 8 page fetches)
 
-Run at least 6 WebSearch queries. After each search, fetch the 1–2 most relevant result URLs with WebFetch to understand content depth and angles. Minimum 3 WebFetch calls total.
+Run at least 20 WebSearch queries across all the categories below. After each search, fetch the 1–2 most relevant result URLs with WebFetch to understand what angles already exist and where the gaps are. Minimum 8 WebFetch calls total.
 
-**Required searches (run all six):**
+The goal of this step is to surface enough raw material to generate 300+ candidate phrases. Cast wide.
 
-1. `"AI for consultants" OR "AI for agencies" questions 2026 site:reddit.com`
-2. `"consulting AI workflow" OR "AI client delivery" how to 2026`
-3. `"how to scale consulting" OR "how to scale agency" AI without hiring 2026`
-4. `"AI client data privacy" OR "AI data isolation per client" questions`
-5. A search targeting the #1 under-represented bucket from Step 1 (use its core theme)
-6. A search targeting the #2 under-represented bucket from Step 1
+**Group A — Community and question searches (run all 5):**
+1. `"AI for consultants" questions problems 2026 site:reddit.com`
+2. `"AI agency workflow" OR "AI client work" problems questions site:reddit.com`
+3. `"how to scale consulting" OR "consulting bottleneck" AI 2026`
+4. `"AI tools for coaches" OR "AI for online business" questions 2026`
+5. `"client data AI" OR "AI multiple clients" privacy isolation questions`
 
-**For each search, record:**
-- Recurring questions that don't match any existing keyword
-- New angles on covered topics (same intent, different phrasing that could rank)
-- Pain points or comparisons CI hasn't addressed yet
+**Group B — One search per bucket (run all 7, one per bucket):**
+6. Bucket 1 (Category-Definition): `"intelligence as a service" OR "per-client AI workspace" definition explained 2026`
+7. Bucket 2 (Pain-Aware): `"scaling service business without hiring" OR "founder bottleneck AI" how to 2026`
+8. Bucket 3 (Solution-Aware): `best AI tools consultants agencies 2026 comparison alternatives`
+9. Bucket 4 (Category-Replacement): `"courses dying" OR "coaching model AI" future 2026`
+10. Bucket 5 (Methodology): `"train AI on your framework" OR "productize methodology AI" how to`
+11. Bucket 6 (Revenue Niche): `AI tools fractional executives coaches "named methodology" 2026`
+12. Bucket 7 (Data Isolation): `"AI client data separate" OR "per-client AI memory" GDPR consulting 2026`
+
+**Group C — Competitor and comparison searches (run all 4):**
+13. `ChatGPT Projects limitations agencies consultants 2026`
+14. `Claude Projects vs alternatives for client work consultants`
+15. `Notion AI limitations problems consultants agencies`
+16. `ClickUp AI OR "project management AI" consultants problems 2026`
+
+**Group D — Long-tail and persona searches (run all 4):**
+17. `"one-person agency" OR "solopreneur consultant" AI tools systems 2026`
+18. `"fractional CMO" OR "fractional CRO" OR "fractional CFO" AI tools workflow`
+19. `"boutique consulting firm" AI workflow scale clients 2026`
+20. `"high-ticket coaching" OR "high-ticket consulting" AI deliver scale 2026`
+
+**For each search, extract every phrase that:**
+- People are actually searching or asking
+- Represents a pain, question, comparison, or job-to-be-done
+- Does not already appear in `references/client-intelligence-keywords-only.md`
+
+**Also: for the top 3 themes surfaced, generate keyword clusters.** A cluster is a core phrase plus 8–12 variations covering: how-to angle, what-is angle, "[X] for [persona]" angle, "[X] vs [Y]" angle, "[X] without [pain]" angle, question format, year-specific variant. Each variation is a separate keyword entry.
 
 **Immediately discard anything that involves:**
 - Enterprise, large teams, Fortune 500
@@ -96,24 +119,32 @@ Run at least 6 WebSearch queries. After each search, fetch the 1–2 most releva
 
 ## STEP 3 — Generate and filter candidates
 
-From your research, generate 15–25 keyword candidates. Apply this filter to every single one before proceeding:
+From your research, generate at least 300 raw keyword candidates before filtering. The goal after filtering is a minimum of 200 clean entries to add to the file.
 
-**KEEP if ALL are true:**
+**How to reach 300+ raw candidates:**
+- Every search should yield 10–20 phrases
+- For every strong core theme, generate a full cluster: the base phrase + variations for each angle (how-to, what-is, for-persona, vs-competitor, without-pain, question format, 2026/2027 year variant) — each variation is a separate entry
+- Cover all 7 buckets — do not cluster everything into 2 or 3 buckets
+- Prioritise search volume signals: phrases that appear repeatedly across different searches and sources rank higher
+
+**Apply this filter to every candidate:**
+
+KEEP if ALL are true:
 - Not already in `references/client-intelligence-keywords-only.md` (check the file — do not guess)
 - Not already the primary topic of a published post in `content/blog.ts`
-- 2–6 words, natural search phrasing, all lowercase
+- 2–7 words, natural search phrasing, all lowercase
 - Searcher intent leads to wanting CI's product (per-client workspace, methodology-trained AI, scale without hiring)
 - CI's ICP would search this: solo consultants, boutique firms (1–15 people), coaches with named methodologies, agency owners who sell their process
 
-**REJECT if ANY are true:**
+REJECT if ANY are true:
 - Already in the keyword file or covered by a published post
 - Implies enterprise or large-team buyer
 - Intent is to find free or open-source tools
 - Vertical-specific and not generalisable to CI's cross-sector ICP
 - Too vague or too broad to rank ("AI for business 2026")
-- Phrase is an obvious variation of one already queued (don't add both "AI for solo consultants" and "AI for solopreneur consultants" if one already exists)
+- Exact duplicate of a phrase already queued (minor wording differences that target the same intent are fine — they cover different search phrasings)
 
-After filtering, target 10–20 clean, distinct candidates.
+**Minimum after filtering: 200 clean keyword entries.** If you fall short, go back to Step 2 and run additional searches until you have enough.
 
 ---
 
